@@ -106,7 +106,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provision "chef_client" do |chef|
 	chef.provisioning_path = "/etc/chef"
-    chef.chef_server_url = "http://192.168.14.124:4000"
+    chef.chef_server_url = "http://10.0.2.2:4000"
     chef.validation_key_path = ".chef/validation.pem"
 	chef.validation_client_name = "chef-validator"
 	chef.node_name = "server01"
